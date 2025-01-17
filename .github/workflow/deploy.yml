@@ -30,9 +30,9 @@ jobs:
       - name: Deploy to cPanel
         uses: SamKirkland/FTP-Deploy-Action@v4.3.1
         with:
-          server: ftp.nikola-djordjevic.com
+          server:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           local-dir: dist/
-          server-dir: /mamagoca.nikola-djordjevic.com/
+          server-dir:
